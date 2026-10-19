@@ -1,0 +1,22 @@
+const temp = [1, 2, 3, , 4];
+const obj={0:10,1:20,length:2}
+Object.defineProperty(Array.prototype, "myMap", {
+  value: function (callBack) {
+    if (typeof callBack !== "function") {
+      throw new TypeError("Not a function");
+    }
+    const result = [];
+    for (let i = 0; i < this.length; i++) {
+      if (i in this) result[i] = callBack(this[i], i, this);
+    }
+    return result;
+  },
+  writable: true,
+  enumerable: false,
+  configurable:true
+});
+console.log(Array.prototype.myMap.call(obj,num=>num*2))
+// console.log( temp.myMap());
+// for (const key in temp) {
+//   console.log(key);
+// }
