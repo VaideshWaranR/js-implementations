@@ -1,5 +1,10 @@
 const temp = [1, 2, 3, , 4];
 const obj={0:10,1:20,length:2}
+
+//normal Array.prototype - fun Implementation will include it in enumerable so we went
+// with object define prop 
+//this enumerable will be seen in for ... in loop
+// also should handle sparse arrays
 Object.defineProperty(Array.prototype, "myMap", {
   value: function (callBack) {
     if (typeof callBack !== "function") {
