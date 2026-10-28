@@ -118,7 +118,4 @@
 23. [ ] Deep clone
 24. [ ] LRU cache
 25. [ ] Retry with exponential backoff
-
-**Practice rule:** For every implementation, understand the native behavior, implement it without copying, test edge cases, and solve tricky output questions.
-
-*Note:* Debounce, throttle, curry, memoize, and similar utilities are common interview implementations, not native JavaScript methods. Interview polyfills may simplify native specifications, so clarify constraints and expected behavior.
+26. [ ] closure
