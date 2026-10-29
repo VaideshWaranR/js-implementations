@@ -118,4 +118,3 @@
 23. [ ] Deep clone
 24. [ ] LRU cache
 25. [ ] Retry with exponential backoff
-26. [ ] closure
